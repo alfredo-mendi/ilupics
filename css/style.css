@@ -2,34 +2,45 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header h1 {font-size: 4em;}
-header img {float: right;
-padding-right: 2em;
-padding-top: 2em;}
+header h1 {
+    font-size: 4em;
+}
+
+header img {
+    float: right;
+    padding-right: 2em;
+    padding-top: 2em;
+}
+
 header, footer {
     background-color: #58EBFF;
 }
 
 main {
     display: flex;
+    padding-right: 1em;
 }
 
-.mainIzq, .mainCen, .mainDch {
+main>div {
     flex: 1;
     overflow: hidden;
     text-align: center;
 }
 
-.obraImg1, .obraImg2, .obraImg3 {
-    max-height: 450px;
+main img {
+    height: 25em;
+    width: 100%;
+    object-fit: cover;
+    padding-left: 1em;
 }
 
-.texto1, .texto2, .texto3 {
-    /*text-align: left;*/
+main>div>div {
+    text-align: left;
     position: relative;
     bottom: 5em;
     background-color: #FFFFFF;
     opacity: 0.6;
+    padding-left: 1em;
 }
 
 main h1 {
@@ -44,5 +55,10 @@ footer {
     display: flex;
     list-style-type: none;
     justify-content: center;
+    padding-bottom: 1.5em;
+}
 
+.logos li {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
