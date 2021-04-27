@@ -1,5 +1,48 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-header, footer {background-color: #58EBFF ;}
-main {display: flex;}
+
+header h1 {font-size: 4em;}
+header img {float: right;
+padding-right: 2em;
+padding-top: 2em;}
+header, footer {
+    background-color: #58EBFF;
+}
+
+main {
+    display: flex;
+}
+
+.mainIzq, .mainCen, .mainDch {
+    flex: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+.obraImg1, .obraImg2, .obraImg3 {
+    max-height: 450px;
+}
+
+.texto1, .texto2, .texto3 {
+    /*text-align: left;*/
+    position: relative;
+    bottom: 5em;
+    background-color: #FFFFFF;
+    opacity: 0.6;
+}
+
+main h1 {
+    font-size: 1.5em;
+}
+
+footer {
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+
+}
