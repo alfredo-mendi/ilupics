@@ -4,12 +4,39 @@ body {
 
 header h1 {
     font-size: 4em;
+    ;
+}
+
+header h2 {
+    margin-top: -2em;
 }
 
 header img {
     float: right;
     padding-right: 2em;
-    padding-top: 2em;
+    padding-top: 1.5em;
+}
+
+header menu {
+    display: none;
+    float: right;
+    position: relative;
+    left: 3em;
+    top: 4.5em;
+    list-style-type: none;
+    background-color: rgb(0, 118, 180);
+    opacity: 0.7;
+}
+
+header menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-right: 1em;
+}
+
+header menu a:hover {
+    text-decoration: underline;
 }
 
 header, footer {
@@ -55,7 +82,7 @@ footer {
     display: flex;
     list-style-type: none;
     justify-content: center;
-    padding-bottom: 1.5em;
+    padding-bottom: 1em;
 }
 
 .logos li {

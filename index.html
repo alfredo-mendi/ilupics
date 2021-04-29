@@ -7,16 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Ilupics</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/menuDespl.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="img/menu.png" alt="Desplegable">
+        <img id="menuDesp" onmouseover="aMenuBlanco()" onmouseout="aMenu()" src="img/menu.png" onclick="ponQuitaMenu()"
+            alt="Desplegable" title="Clic para desplegar el menú">
+        <menu id="desplegable">
+            <li></li><a href="">Autores</a></li>
+            <li><a href="">Obras</a></li>
+            <li><a href="">Blog</a></li>
+        </menu>
         <h1>ilupics</h1>
         <h2>Ejemplos de ilustraciones sin más</h2>
 
     </header>
-    <main>
+    <main onclick="quitaMenu()">
         <div class="mainIzq">
             <img class="obraImg1" src="img/whalen-tom-monster80s.jpg">
             <div class="texto1">
@@ -38,7 +45,7 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer onclick="quitaMenu()">
         <p>Este ejercicio solo comprende fines formativos y educativos sin afán de lucro</p>
         <ul class="logos">
             <li><a href="https://www.linkedin.com/in/amendizabal/" target="_blank"><img src="img/facebook.png"
