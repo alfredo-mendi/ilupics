@@ -14,16 +14,17 @@
     <header>
         <img id="menuDesp" onmouseover="aMenuBlanco()" onmouseout="aMenu()" src="img/menu.png" onclick="ponQuitaMenu()"
             alt="Desplegable" title="Clic para desplegar el menú">
-        <menu id="desplegable">
+        <ul id="desplegable">
             <li></li><a href="">Autores</a></li>
             <li><a href="">Obras</a></li>
             <li><a href="">Blog</a></li>
-        </menu>
+        </ul>
         <h1>ilupics</h1>
         <h2>Ejemplos de ilustraciones sin más</h2>
-
+        <!--Ojo: si metemos más imágenes en el header hay que arreglar la función altImg()-->
     </header>
     <main onclick="quitaMenu()">
+
         <div class="mainIzq">
             <img class="obraImg1" src="img/whalen-tom-monster80s.jpg">
             <div class="texto1">
@@ -44,6 +45,7 @@
                 <p class="autor3">Masim Usik</p>
             </div>
         </div>
+        <script>altImg()</script>
     </main>
     <footer onclick="quitaMenu()">
         <p>Este ejercicio solo comprende fines formativos y educativos sin afán de lucro</p>

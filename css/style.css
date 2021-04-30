@@ -17,7 +17,7 @@ header img {
     padding-top: 1.5em;
 }
 
-header menu {
+header ul {
     display: none;
     float: right;
     position: relative;
@@ -28,14 +28,14 @@ header menu {
     opacity: 0.7;
 }
 
-header menu a {
+header ul a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 1.5em;
     padding-right: 1em;
 }
 
-header menu a:hover {
+header ul a:hover {
     text-decoration: underline;
 }
 
@@ -55,7 +55,7 @@ main>div {
 }
 
 main img {
-    height: 25em;
+    /*height: 25em;*/
     width: 100%;
     object-fit: cover;
     padding-left: 1em;
