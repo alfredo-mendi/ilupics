@@ -55,7 +55,7 @@ main>div {
 }
 
 main img {
-    /*height: 25em;*/
+    height: 35em;
     width: 100%;
     object-fit: cover;
     padding-left: 1em;
@@ -74,8 +74,19 @@ main h1 {
     font-size: 1.5em;
 }
 
+.masImg {
+    margin-left: 0.5em;
+    margin-right: -0.67em;
+}
+
+.menosImg, .masImg {
+    font-size: 1.5em;
+    height: 23.5em;
+}
+
 footer {
     text-align: center;
+    margin-top: -6em;
 }
 
 .logos {

@@ -21,31 +21,33 @@
         </ul>
         <h1>ilupics</h1>
         <h2>Ejemplos de ilustraciones sin más</h2>
-        <!--Ojo: si metemos más imágenes en el header hay que arreglar la función altImg()-->
     </header>
     <main onclick="quitaMenu()">
-
-        <div class="mainIzq">
-            <img class="obraImg1" src="img/whalen-tom-monster80s.jpg">
-            <div class="texto1">
-                <h1 class="obraNombre1">Monster 80's</h1>
-                <p class="autor1">Tom Whalen</p>
+        <button class="menosImg" type="button" onclick="menosImg()">&lt;</button>
+        <div id="mainIzq">
+            <img id="obraIzq" src="img/whalen-tom-monster80s.jpg">
+            <div id="textoIzq">
+                <h1 id="obraNombreIzq">Monster 80's</h1>
+                <p id="autorIzq">Tom Whalen</p>
             </div>
         </div>
-        <div class="mainCen"><img class="obraImg2" src="img/travel-tom-redfern.jpg">
-            <div class="texto2">
-                <h1 class="obraNombre2">Redfern</h1>
-                <p class="autor2">Tom Travel</p>
+        <div id="mainCen">
+            <img id="obraCen" src="img/travel-tom-redfern.jpg">
+            <div id="textoCen">
+                <h1 id="obraNombreCen">Redfern</h1>
+                <p id="autorCen">Tom Travel</p>
             </div>
         </div>
-        <div class="mainDch">
-            <img class="obraImg3" src="img/usik-maxim-the-girl-in-jungles.jpg">
-            <div class="texto3">
-                <h1 class="obraNombre3">The girl in jungle</h1>
-                <p class="autor3">Masim Usik</p>
+        <div id="mainDch">
+            <img id="obraDch" src="img/usik-maxim-the-girl-in-jungles.jpg">
+            <div id="textoDch">
+                <h1 id="obraNombreDch">The girl in jungle</h1>
+                <p id="autorDch">Masim Usik</p>
             </div>
         </div>
-        <script>altImg()</script>
+        <script>selImg()</script>
+        <!--<script>altImg()</script>-->
+        <button class="masImg" type="button" onclick="masImg()">&gt;</button>
     </main>
     <footer onclick="quitaMenu()">
         <p>Este ejercicio solo comprende fines formativos y educativos sin afán de lucro</p>
