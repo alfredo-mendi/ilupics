@@ -19,17 +19,20 @@
             <li><a href="">Obras</a></li>
             <li><a href="">Blog</a></li>
         </ul>
-        <h1>ilupics</h1>
-        <h2>Ejemplos de ilustraciones sin más</h2>
+        <a href="">
+            <h1>ilupics</h1>
+            <h2>Ejemplos de ilustraciones sin más</h2>
+        </a>
     </header>
     <main onclick="quitaMenu()">
-        <button class="menosImg" type="button" onclick="menosImg()">&lt;</button>
+        <button id="menosImg" type="button" onclick="menosImg()">&lt;</button>
         <div id="mainIzq">
             <img id="obraIzq" src="img/whalen-tom-monster80s.jpg">
             <div id="textoIzq">
                 <h1 id="obraNombreIzq">Monster 80's</h1>
                 <p id="autorIzq">Tom Whalen</p>
             </div>
+        </div>
         </div>
         <div id="mainCen">
             <img id="obraCen" src="img/travel-tom-redfern.jpg">
@@ -47,7 +50,7 @@
         </div>
         <script>selImg()</script>
         <!--<script>altImg()</script>-->
-        <button class="masImg" type="button" onclick="masImg()">&gt;</button>
+        <button id="masImg" type="button" onclick="masImg()">&gt;</button>
     </main>
     <footer onclick="quitaMenu()">
         <p>Este ejercicio solo comprende fines formativos y educativos sin afán de lucro</p>

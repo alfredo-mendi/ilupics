@@ -40,18 +40,6 @@ function masImg() {
     if (izq >= obras.length) { izq = izq - obras.length };
     if (cen >= obras.length) { cen = cen - obras.length };
     if (dch >= obras.length) { dch = dch - obras.length };
-    /*if (izq >= obras.length) {
-        izq = izq - obras.length;
-        cen = cen - obras.length;
-        dch = dch - obras.length;
-    }
-    else if (cen >= obras.length) {
-        cen = cen - obras.length;
-        dch = dch - obras.length;
-    }
-    else if (dch >= obras.length) {
-        dch = dch - obras.length;
-    };*/
     selImg();
 };
 
@@ -76,19 +64,16 @@ function selImg() {
     document.getElementById("obraDch").src = obras[dch].fichero;
     document.getElementById("obraNombreDch").innerHTML = obras[dch].nombre;
     document.getElementById("autorDch").innerHTML = obras[dch].autor.apellido + " " + obras[dch].autor.nombre;
+    altImg()
 }
 
 function altImg() {
-    var lugares = ["Izq", "Cen", "Dch"];
-    var altura = document.getElementById("obra" + lugares[1]).naturalHeight;
-    alert(altura)
+    let lugares = ["Izq", "Cen", "Dch"];
+    let altura = document.getElementById("obra" + lugares[0]).naturalHeight;
+    //let altura = 1500
     for (lu in lugares) {
         if (document.getElementById("obra" + lugares[lu]).naturalHeight < altura) { altura = document.getElementById("obra" + lugares[lu]).naturalHeight }
-        alert(document.getElementById("obra" + lugares[lu]).src)
-        alert(altura)
-
     };
-    alert(altura)
-
     for (lu in lugares) { document.getElementById("obra" + lugares[lu]).height = altura };
+    //document.getElementsById("menosImg").style.height = altura
 };
